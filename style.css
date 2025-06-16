@@ -7,3 +7,13 @@ img.cat {
   height: 40px;
   border-radius: 50%;
 }
+.circle {
+  background-color: #f0f0f0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+.circle:hover {
+  cursor: pointer;
+}

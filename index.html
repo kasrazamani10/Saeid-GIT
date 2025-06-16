@@ -10,25 +10,106 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <nav class="navbar navbar-light bg-light px-4">
       <div
         class="container-fluid d-flex flex-wrap justify-content-center justify-content-md-between align-items-center"
       >
-        <div class="d-flex align-items-center gap-2">
-          <a
-            class="navbar-brand"
-            data-bs-toggle="offcanvas"
-            href="#offcanvasMenu"
-            role="button"
-            aria-controls="offcanvasMenu"
-          >
-            <i class="bi bi-list" style="font-size: 30px"></i>
-          </a>
+        <div class="d-flex align-items-center gap-3">
+          <span class="navbar-toggler-icon"></span>
+
           <img src="img/cat.png " class="cat" alt="logo" />
-          <p class="mb-0">dashbord</p>
+          <span>dashbord</span>
         </div>
+        <ul
+          style="list-style-type: none"
+          class="d-flex justify-content-center align-items-center gap-3 mb-0"
+        >
+          <li class="btn-group" role="group">
+            <button
+              type="button"
+              class="btn btn-light btn-sm d-flex justify-content-center align-items-center"
+              style="
+                border: 1px solid #b0b0b0;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+              "
+            >
+              <i class="fas fa-frog" style="font-size: 16px; color: #333"></i>
+            </button>
+
+            <!-- دکمه سمت راست (فلش پایین) -->
+            <button
+              type="button"
+              class="btn btn-light btn-sm d-flex justify-content-center align-items-center"
+              style="
+                border: 1px solid #b0b0b0;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+              "
+            >
+              <i
+                class="bi bi-caret-down-fill"
+                style="font-size: 14px; color: #333"
+              ></i>
+            </button>
+          </li>
+
+          <span style="color: #a1a1a1">|</span>
+          <li>
+            <button
+              type="button"
+              class="btn btn-light btn-sm d-flex align-items-center gap-1"
+              style="border-radius: 10px; border: 1px solid #b0b0b0"
+            >
+              <!-- آیکون مثبت -->
+              <i class="bi bi-plus" style="font-size: 16px; color: #333"></i>
+
+              <!-- فاصله افقی -->
+              <span style="width: 4px"></span>
+
+              <!-- فلش پایین -->
+              <i
+                class="bi bi-caret-down-fill"
+                style="font-size: 15px; color: #333"
+              ></i>
+            </button>
+          </li>
+
+          <li class="d-flex align-items-center">
+            <button
+              type="button"
+              class="btn btn-light btn-sm"
+              style="border-radius: 8px; border: 1px solid #b0b0b0"
+            >
+              <i class="bi bi-record-circle"></i>
+            </button>
+          </li>
+          <li class="d-flex align-items-center">
+            <button
+              type="button"
+              class="btn btn-light btn-sm"
+              style="border-radius: 8px; border: 1px solid #b0b0b0"
+            >
+              <i class="bi bi-git"></i>
+            </button>
+          </li>
+          <li class="d-flex align-items-center">
+            <button
+              type="button"
+              class="btn btn-light btn-sm"
+              style="border-radius: 8px; border: 1px solid #b0b0b0"
+            >
+              <i class="bi bi-eraser"> </i>
+            </button>
+          </li>
+          <li class="circle"></li>
+        </ul>
       </div>
     </nav>
 
