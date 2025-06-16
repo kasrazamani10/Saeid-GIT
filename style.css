@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img.cat {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
