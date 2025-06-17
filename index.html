@@ -16,24 +16,61 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light px-4">
+    <nav class="navbar navbar-light bg-light">
       <div
         class="container-fluid d-flex flex-wrap justify-content-center justify-content-md-between align-items-center"
       >
-        <div class="d-flex align-items-center gap-3">
-          <span class="navbar-toggler-icon"></span>
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <!-- دکمه همبرگری -->
+          <button
+            type="button"
+            class="btn btn-light btn-sm d-flex justify-content-center align-items-center"
+          >
+            <span
+              class="navbar-toggler-icon small-toggler-icon"
+              style="width: 20px; height: 20px; background-size: 100% 100%"
+            ></span>
+          </button>
 
-          <img src="img/cat.png " class="cat" alt="logo" />
-          <span>dashbord</span>
+          <!-- لوگو -->
+          <img src="img/cat.png" class="cat" alt="logo" />
+          <button
+            type="button"
+            class="btn btn-light btn-sm d-flex justify-content-center align-items-center"
+          >
+            <span>Dashboard</span>
+          </button>
+          <!-- عنوان -->
         </div>
-        <ul
-          style="list-style-type: none"
-          class="d-flex justify-content-center align-items-center gap-3 mb-0"
-        >
-          <li class="btn-group" role="group">
+
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <div class="position-relative m-0">
+            <input
+              type="text"
+              class="form-control form-control-sm custom-input"
+              placeholder="type / to search"
+              aria-label="جستجو"
+              style="border-radius: 5px; padding-left: 25px"
+            />
+            <i
+              class="bi bi-search"
+              style="
+                position: absolute;
+                left: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #888;
+                font-size: 14px;
+                pointer-events: none;
+              "
+            >
+            </i>
+          </div>
+
+          <div class="btn-group" role="group">
             <button
               type="button"
-              class="btn btn-light btn-sm d-flex justify-content-center align-items-center"
+              class="btn btn-light btn-sm"
               style="
                 border: 1px solid #b0b0b0;
                 border-top-left-radius: 5px;
@@ -46,7 +83,7 @@
             <!-- دکمه سمت راست (فلش پایین) -->
             <button
               type="button"
-              class="btn btn-light btn-sm d-flex justify-content-center align-items-center"
+              class="btn btn-light btn-sm"
               style="
                 border: 1px solid #b0b0b0;
                 border-top-right-radius: 5px;
@@ -58,13 +95,13 @@
                 style="font-size: 14px; color: #333"
               ></i>
             </button>
-          </li>
+          </div>
 
           <span style="color: #a1a1a1">|</span>
-          <li>
+          <div>
             <button
               type="button"
-              class="btn btn-light btn-sm d-flex align-items-center gap-1"
+              class="btn btn-light btn-sm d-flex"
               style="border-radius: 10px; border: 1px solid #b0b0b0"
             >
               <!-- آیکون مثبت -->
@@ -79,9 +116,9 @@
                 style="font-size: 15px; color: #333"
               ></i>
             </button>
-          </li>
+          </div>
 
-          <li class="d-flex align-items-center">
+          <div>
             <button
               type="button"
               class="btn btn-light btn-sm"
@@ -89,8 +126,8 @@
             >
               <i class="bi bi-record-circle"></i>
             </button>
-          </li>
-          <li class="d-flex align-items-center">
+          </div>
+          <div>
             <button
               type="button"
               class="btn btn-light btn-sm"
@@ -98,8 +135,8 @@
             >
               <i class="bi bi-git"></i>
             </button>
-          </li>
-          <li class="d-flex align-items-center">
+          </div>
+          <div>
             <button
               type="button"
               class="btn btn-light btn-sm"
@@ -107,9 +144,9 @@
             >
               <i class="bi bi-eraser"> </i>
             </button>
-          </li>
-          <li class="circle"></li>
-        </ul>
+          </div>
+          <div class="circle"></div>
+        </div>
       </div>
     </nav>
 

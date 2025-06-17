@@ -17,3 +17,8 @@ img.cat {
 .circle:hover {
   cursor: pointer;
 }
+  .custom-input:focus {
+    border-color: #ccc !important; /* حذف رنگ آبی */
+    box-shadow: none !important;   /* حذف shadow آبی */
+    outline: none !important;      /* حذف outline پیش‌فرض */
+  }
