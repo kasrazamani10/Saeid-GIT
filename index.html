@@ -152,13 +152,11 @@
         </div>
       </div>
     </nav>
-    <!---##########ستون سمت راست##########################3-->
-    <div class="d-flex">
-      <div
-        class="d-flex flex-column justify-content-center px-2"
-        style="width: 340px; height: 100%"
-      >
-        <div class="d-flex align-items-center dropdown mt-3 gap-3">
+    <!-----       #############CONTENT#################       -------->
+    <div class="container-fluid d-flex justify-content-between">
+      <!---############## ستون سمت چپ####################-->
+      <div class="d-flex flex-column align-items-start">
+        <div class="d-flex align-items-center dropdown gap-3 p-1">
           <input type="checkbox" class="form-check-input" />
           <button
             class="btn dropdown-toggle"
@@ -174,174 +172,244 @@
           </ul>
         </div>
         <div
-          class="d-flex align-items-center justify-content-between gap-5 mt-3"
+          class="d-flex align-items-center justify-content-between gap-5 p-1"
         >
           <p class="mb-0">Top Repasitory</p>
           <button type="button" class="btn btn-sm bg-success">
             <i class="bi bi-printer"></i> New
           </button>
         </div>
-        <div class="d-flex align-items-center mt-3">
+        <div class="d-flex align-items-center p-1">
           <input
-            class="form-control form-control-sm bg-light w-100"
+            class="form-control form-control-sm bg-light"
             type="text"
             placeholder="Find a Repasitory.."
           />
         </div>
-        <div class="d-flex align-items-center gap-2 mt-3" style="width: 100%">
+        <div class="d-flex align-items-center gap-2 p-1">
           <input type="checkbox" class="form-check-input" />
           <p class="mb-0" style="white-space: nowrap">
             Eagle-Tech-Solutions-Ltd/itq-rsadmissions
           </p>
         </div>
-        <div class="d-flex align-items-center gap-2 mt-3" style="width: 100%">
+        <div class="d-flex align-items-center gap-2 p-1">
           <input type="checkbox" class="form-check-input" />
           <p class="mb-0" style="white-space: nowrap">
             Eagle-Tech-Solutions-Ltd/totike-palm-mvc
           </p>
         </div>
-        <div class="d-flex align-items-center gap-2 mt-3" style="width: 100%">
+        <div class="d-flex align-items-center gap-2 p-1">
           <input type="checkbox" class="form-check-input" />
           <p class="mb-0" style="white-space: nowrap">
             Eagle-Tech-Solutions-Ltd/metis-tools
           </p>
         </div>
-        <div class="d-flex align-items-center gap-2 mt-3" style="width: 100%">
+        <div class="d-flex align-items-center gap-1 p-1">
           <input type="checkbox" class="form-check-input" />
           <p class="mb-0">Eagle-Tech-Solutions-Ltd/Amzoo-Web-App</p>
         </div>
-        <div class="d-flex align-items-center gap-2 mt-3" style="width: 100%">
+        <div class="d-flex align-items-center gap-2 p-1">
           <input type="checkbox" class="form-check-input" />
           <p class="mb-0">Eagle-Tech-Solutions-Ltd/loop-jam-backend</p>
         </div>
-        <div class="d-flex align-items-center gap-2 mt-3" style="width: 100%">
+        <div class="d-flex align-items-center gap-2 p-1">
           <input type="checkbox" class="form-check-input" />
           <p class="mb-0" style="white-space: nowrap">
             Eagle-Tech-Solutions-Ltd/Uno-Web-App
           </p>
         </div>
-        <div class="d-flex align-items-center gap-2 mt-3" style="width: 100%">
+        <div class="d-flex align-items-center gap-2 p-1">
           <input type="checkbox" class="form-check-input" />
           <p class="mb-0" style="white-space: nowrap">
             hojlany-eagle/OrbitCareV2
           </p>
         </div>
       </div>
-      <!-- خط عمودی مستقل -->
+
+      <!---------             خط عمودی  ---------->
 
       <div
+        class="vertical-line"
         style="
           position: fixed;
-          top: 57px;
-          left: 350px; /* یا هر عرضی که ستون کناری‌ت داره */
+          top: 60px;
+          bottom: 0;
+          left: 355px;
           width: 1px;
-          height: 100vh;
-          background-color: rgb(199, 199, 199);
-          z-index: 10;
+          background-color: #ccc;
+          z-index: 1;
         "
       ></div>
 
-      <div class="container">
-        <div class="d-flex flex-column justify-content-center px-5">
-          <div class="d-flex flex-column justify-content-start mt-5">
-            <h4>Home</h4>
-            <div class="d-flex position-relative" style="width: 70%">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Ask Copilot"
-              />
-              <i
-                class="bi bi-send"
-                style="
-                  position: absolute;
-                  right: 10px;
-                  top: 50%;
-                  transform: translateY(-50%);
-                "
-              ></i>
-            </div>
-          </div>
-          <div
-            class="d-flex align-items-center justify-content-start mt-2 gap-2"
-          >
-            <button type="button" class="btn btn-light btn-sm">
-              <i class="bi bi-arrow-left"></i>
-              <i class="bi bi-arrow-right"></i>
-              New
-            </button>
+      <!---------                            $$$$$$ محتوای وسط@@@   --------------------------->
 
-            <button type="button" class="btn btn-light btn-sm">
-              <i class="bi bi-record-circle"> </i>
-              Suggest next steps for an issue
-            </button>
-            <button type="button" class="btn btn-light btn-sm">
-              <i class="bi bi-git"> </i>
-              Summarize a pull request
-            </button>
+      <div class="d-flex flex-column justify-content-center px-2">
+        <div class="d-flex flex-column justify-content-start mt-5">
+          <h4>Home</h4>
+          <div class="d-flex position-relative">
+            <input type="text" class="form-control" placeholder="Ask Copilot" />
+            <i
+              class="bi bi-send"
+              style="
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+              "
+            ></i>
           </div>
-          <div class="d-flex justify-content-between mt-5" style="width: 70%">
-            <p class="fw-bold">Feed</p>
-            <button type="button" class="btn btn-light btn-sm">
-              <i class="bi bi-list"></i>
-              Filter
-            </button>
-          </div>
-          <div class="border rounded p-3 mb-3 mt-2" style="width: 70%">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-bar-chart"></i>
-                <p class="mb-0 text-muted">Trending repository .</p>
-                <p class="mb-0 fw-semibold">See more</p>
-              </div>
-              <div style="font-size: 20px">...</div>
+        </div>
+        <div class="d-flex justify-content-start mt-2 gap-2">
+          <button type="button" class="btn btn-light btn-sm">
+            <i class="bi bi-arrow-left"></i>
+            <i class="bi bi-arrow-right"></i>
+            New
+          </button>
+
+          <button type="button" class="btn btn-light btn-sm">
+            <i class="bi bi-record-circle"> </i>
+            Suggest next steps for an issue
+          </button>
+          <button type="button" class="btn btn-light btn-sm">
+            <i class="bi bi-git"> </i>
+            Summarize a pull request
+          </button>
+        </div>
+        <div class="d-flex justify-content-between mt-5">
+          <p class="fw-bold">Feed</p>
+          <button type="button" class="btn btn-light btn-sm">
+            <i class="bi bi-list"></i>
+            Filter
+          </button>
+        </div>
+        <!---}}}}}}}}}{{{{{{{{{{{{{{{{{{{{{ج}}}}}}}}}}}}}}}}}}}}}-->
+
+        <div class="border rounded">
+          <div class="d-flex justify-content-between align-items-center m-2">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-bar-chart"></i>
+              <span>Trending repository .</span>
+              <span>See more</span>
             </div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div class="d-flex align-items-center gap-2">
+            <div style="font-size: 20px">...</div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center m-2">
+            <div class="d-flex align-items-center gap-2">
+              <div
+                style="
+                  width: 20px;
+                  height: 20px;
+                  background-color: #a1a1a1;
+                  border-radius: 50%;
+                "
+              ></div>
+              <span>guandeh17/Self-forcing</span>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-light btn-sm d-flex align-items-center gap-2 px-2"
+            >
+              <i class="bi bi-star-fill"></i>
+              <span>Rate</span>
+              <hr />
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+          </div>
+          <div class="d-flex justify-content-between align-items-center m-2">
+            <div class="d-flex align-items-center gap-2">
+              <div class="d-flex align-items-center">
                 <div
                   style="
                     width: 20px;
                     height: 20px;
-                    background-color: #a1a1a1;
+                    background-color: #004768e2;
                     border-radius: 50%;
                   "
                 ></div>
-                <p class="mb-0">guandeh17/Self-forcing</p>
+                <span>Python</span>
               </div>
-              <div class="d-flex align-items-center gap-2">
-                <button
-                  type="button"
-                  class="btn btn-light btn-sm d-flex align-items-center gap-2 px-2"
-                >
-                  <i class="bi bi-star-fill"></i>
-                  <span>Rate</span>
-                  <div
-                    style="width: 1px; height: 16px; background-color: #ccc"
-                  ></div>
-                  <i class="bi bi-caret-down-fill"></i>
-                </button>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-star"></i> 1.5k
               </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div class="d-flex align-items-center gap-2">
-                <div class="d-flex align-items-center">
-                  <div
-                    style="
-                      width: 20px;
-                      height: 20px;
-                      background-color: #a1a1a1;
-                      border-radius: 50%;
-                    "
-                  ></div>
-                  <span>Python</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-star"></i> 1.5k
-                </div>
+          </div>
+
+          <div
+            style="height: 1px; background-color: #ccc; margin: 5px 0px"
+          ></div>
+
+          <div class="d-flex justify-content-between align-items-center m-2">
+            <div class="d-flex align-items-center gap-2">
+              <div
+                style="
+                  width: 20px;
+                  height: 20px;
+                  background-color: #a1a1a1;
+                  border-radius: 50%;
+                "
+              ></div>
+              <span>Shubhamsaboo/awesome-llm-apps</span>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-light btn-sm d-flex align-items-center gap-2 px-2"
+            >
+              <i class="bi bi-star-fill"></i>
+              <span>Rate</span>
+
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+          </div>
+          <div class="d-flex justify-content-between align-items-center m-2">
+            <span
+              >Collection of awesome LLM apps with AI Agents and RAG using
+              OpenAI,Anthropic,Gemini and opensource models.</span
+            >
+          </div>
+          <div class="d-flex justify-content-between align-items-center m-2">
+            <div class="d-flex align-items-center gap-2">
+              <div class="d-flex align-items-center">
+                <div
+                  style="
+                    width: 20px;
+                    height: 20px;
+                    background-color: #004768e2;
+                    border-radius: 50%;
+                  "
+                ></div>
+                <span>Python</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-star"></i> 41k
               </div>
             </div>
           </div>
         </div>
+        <!-----------انتهای جدول ###############################-######------------->
+        <div class="d-flex justify-content-center align-items-center m-4 gap-1">
+          <img src="img/cat.png" class="cat" alt="logo" />
+          <div
+            class="d-flex justify-content-center align-items-center text-nowrap gap-3"
+          >
+            <p class="mb-0">@2025 GitHub,inc.</p>
+            <p class="mb-0">Terms</p>
+            <p class="mb-0">Privacy</p>
+            <p class="mb-0">Security</p>
+            <p class="mb-0">Status</p>
+            <p class="mb-0">Docs</p>
+            <p class="mb-0">Contact</p>
+            <p class="mb-0">Mangecookies</p>
+            <p class="mb-0">Do not share personal information</p>
+          </div>
+        </div>
+      </div>
+      <div class="border rounded">
+        <div class="d-flex justify-content-start px-2">
+          <h5>Latest changes</h5>
+        </div>
+        <div class="d-flex flex-column justify-content-center"></div>
       </div>
     </div>
 

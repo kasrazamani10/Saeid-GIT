@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 img.cat {
   width: 40px;
   height: 40px;
@@ -48,4 +52,3 @@ input.form-control:focus {
   box-shadow: none;
   border-color: #ced4da;
 }
-
