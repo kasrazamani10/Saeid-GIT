@@ -153,9 +153,12 @@
       </div>
     </nav>
     <!-----       #############CONTENT#################       -------->
-    <div class="container-fluid d-flex justify-content-between">
+    <div
+      class=" d-flex justify-content-between gap-5"
+      
+    >
       <!---############## ستون سمت چپ####################-->
-      <div class="d-flex flex-column align-items-start">
+      <div class="d-flex flex-column align-items-between">
         <div class="d-flex align-items-center dropdown gap-3 p-1">
           <input type="checkbox" class="form-check-input" />
           <button
@@ -172,7 +175,7 @@
           </ul>
         </div>
         <div
-          class="d-flex align-items-center justify-content-between gap-5 p-1"
+          class="d-flex align-items-center justify-content-between gap-3 p-1"
         >
           <p class="mb-0">Top Repasitory</p>
           <button type="button" class="btn btn-sm bg-success">
@@ -227,189 +230,221 @@
       </div>
 
       <!---------             خط عمودی  ---------->
-
-      <div
-        class="vertical-line"
-        style="
-          position: fixed;
-          top: 60px;
-          bottom: 0;
-          left: 355px;
-          width: 1px;
-          background-color: #ccc;
-          z-index: 1;
-        "
-      ></div>
+      <div></div>
+      
 
       <!---------                            $$$$$$ محتوای وسط@@@   --------------------------->
+<div class="container d-flex justify-content-center  " >
 
-      <div class="d-flex flex-column justify-content-center px-2">
-        <div class="d-flex flex-column justify-content-start mt-5">
-          <h4>Home</h4>
-          <div class="d-flex position-relative">
-            <input type="text" class="form-control" placeholder="Ask Copilot" />
-            <i
-              class="bi bi-send"
-              style="
-                position: absolute;
-                right: 10px;
-                top: 50%;
-                transform: translateY(-50%);
-              "
-            ></i>
-          </div>
-        </div>
-        <div class="d-flex justify-content-start mt-2 gap-2">
-          <button type="button" class="btn btn-light btn-sm">
-            <i class="bi bi-arrow-left"></i>
-            <i class="bi bi-arrow-right"></i>
-            New
-          </button>
-
-          <button type="button" class="btn btn-light btn-sm">
-            <i class="bi bi-record-circle"> </i>
-            Suggest next steps for an issue
-          </button>
-          <button type="button" class="btn btn-light btn-sm">
-            <i class="bi bi-git"> </i>
-            Summarize a pull request
-          </button>
-        </div>
-        <div class="d-flex justify-content-between mt-5">
-          <p class="fw-bold">Feed</p>
-          <button type="button" class="btn btn-light btn-sm">
-            <i class="bi bi-list"></i>
-            Filter
-          </button>
-        </div>
-        <!---}}}}}}}}}{{{{{{{{{{{{{{{{{{{{{ج}}}}}}}}}}}}}}}}}}}}}-->
-
-        <div class="border rounded">
-          <div class="d-flex justify-content-between align-items-center m-2">
-            <div class="d-flex align-items-center gap-2">
-              <i class="bi bi-bar-chart"></i>
-              <span>Trending repository .</span>
-              <span>See more</span>
-            </div>
-            <div style="font-size: 20px">...</div>
-          </div>
-          <div class="d-flex justify-content-between align-items-center m-2">
-            <div class="d-flex align-items-center gap-2">
-              <div
+      <div class="d-flex justify-content-between px-2 gap-3 mt-4">
+        <div class="d-flex justify-content-center  "style="width: -50%;">
+        <div class="d-flex flex-column justify-content-start ">
+          <div class="d-flex flex-column justify-content-start ">
+            <h4>Home</h4>
+            <div class="d-flex position-relative" >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Ask Copilot"
+              />
+              <i
+                class="bi bi-send"
                 style="
-                  width: 20px;
-                  height: 20px;
-                  background-color: #a1a1a1;
-                  border-radius: 50%;
+                  position: absolute;
+                  right: 10px;
+                  top: 50%;
+                  transform: translateY(-50%);
                 "
-              ></div>
-              <span>guandeh17/Self-forcing</span>
+              ></i>
             </div>
+          </div>
+          <div class="d-flex justify-content-start mt-2 gap-2">
+            <button type="button" class="btn btn-light btn-sm">
+              <i class="bi bi-arrow-left"></i>
+              <i class="bi bi-arrow-right"></i>
+              New
+            </button>
 
-            <button
-              type="button"
-              class="btn btn-light btn-sm d-flex align-items-center gap-2 px-2"
-            >
-              <i class="bi bi-star-fill"></i>
-              <span>Rate</span>
-              <hr />
-              <i class="bi bi-caret-down-fill"></i>
+            <button type="button" class="btn btn-light btn-sm">
+              <i class="bi bi-record-circle"> </i>
+              Suggest next steps for an issue
+            </button>
+            <button type="button" class="btn btn-light btn-sm">
+              <i class="bi bi-git"> </i>
+              Summarize a pull request
             </button>
           </div>
-          <div class="d-flex justify-content-between align-items-center m-2">
-            <div class="d-flex align-items-center gap-2">
-              <div class="d-flex align-items-center">
+          <div class="d-flex justify-content-between mt-5">
+            <p class="fw-bold">Feed</p>
+            <button type="button" class="btn btn-light btn-sm">
+              <i class="bi bi-list"></i>
+              Filter
+            </button>
+          </div>
+          <!---}}}}}}}}}{{{{{{{{{{{{{{{{{{{{{جدول}}}}}}}}}}}}}}}}}}}}-->
+
+          <div class="border rounded">
+            <div class="d-flex justify-content-between align-items-center m-2">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-bar-chart"></i>
+                <span>Trending repository .</span>
+                <span>See more</span>
+              </div>
+              <div style="font-size: 20px">...</div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center m-2">
+              <div class="d-flex align-items-center gap-2">
                 <div
                   style="
                     width: 20px;
                     height: 20px;
-                    background-color: #004768e2;
+                    background-color: #a1a1a1;
                     border-radius: 50%;
                   "
                 ></div>
-                <span>Python</span>
+                <span>guandeh17/Self-forcing</span>
               </div>
-              <div class="d-flex align-items-center">
-                <i class="bi bi-star"></i> 1.5k
+
+              <button
+                type="button"
+                class="btn btn-light btn-sm d-flex align-items-center gap-2 px-2"
+              >
+                <i class="bi bi-star-fill"></i>
+                <span>Rate</span>
+                <hr />
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+            </div>
+            <div class="d-flex justify-content-between align-items-center m-2">
+              <div class="d-flex align-items-center gap-2">
+                <div class="d-flex align-items-center">
+                  <div
+                    style="
+                      width: 20px;
+                      height: 20px;
+                      background-color: #004768e2;
+                      border-radius: 50%;
+                    "
+                  ></div>
+                  <span>Python</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-star"></i> 1.5k
+                </div>
               </div>
             </div>
-          </div>
 
-          <div
-            style="height: 1px; background-color: #ccc; margin: 5px 0px"
-          ></div>
+            <div
+              style="height: 1px; background-color: #ccc; margin: 5px 0px"
+            ></div>
 
-          <div class="d-flex justify-content-between align-items-center m-2">
-            <div class="d-flex align-items-center gap-2">
-              <div
-                style="
-                  width: 20px;
-                  height: 20px;
-                  background-color: #a1a1a1;
-                  border-radius: 50%;
-                "
-              ></div>
-              <span>Shubhamsaboo/awesome-llm-apps</span>
-            </div>
-
-            <button
-              type="button"
-              class="btn btn-light btn-sm d-flex align-items-center gap-2 px-2"
-            >
-              <i class="bi bi-star-fill"></i>
-              <span>Rate</span>
-
-              <i class="bi bi-caret-down-fill"></i>
-            </button>
-          </div>
-          <div class="d-flex justify-content-between align-items-center m-2">
-            <span
-              >Collection of awesome LLM apps with AI Agents and RAG using
-              OpenAI,Anthropic,Gemini and opensource models.</span
-            >
-          </div>
-          <div class="d-flex justify-content-between align-items-center m-2">
-            <div class="d-flex align-items-center gap-2">
-              <div class="d-flex align-items-center">
+            <div class="d-flex justify-content-between align-items-center m-2">
+              <div class="d-flex align-items-center gap-2">
                 <div
                   style="
                     width: 20px;
                     height: 20px;
-                    background-color: #004768e2;
+                    background-color: #a1a1a1;
                     border-radius: 50%;
                   "
                 ></div>
-                <span>Python</span>
+                <span>Shubhamsaboo/awesome-llm-apps</span>
               </div>
-              <div class="d-flex align-items-center">
-                <i class="bi bi-star"></i> 41k
+
+              <button
+                type="button"
+                class="btn btn-light btn-sm d-flex align-items-center gap-2 px-2"
+              >
+                <i class="bi bi-star-fill"></i>
+                <span>Rate</span>
+
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+            </div>
+            <div class="d-flex justify-content-between align-items-center m-2">
+              <span
+                >Collection of awesome LLM apps with AI Agents and RAG using
+                OpenAI,Anthropic,Gemini and opensource models.</span
+              >
+            </div>
+            <div class="d-flex justify-content-between align-items-center m-2">
+              <div class="d-flex align-items-center gap-2">
+                <div class="d-flex align-items-center">
+                  <div
+                    style="
+                      width: 20px;
+                      height: 20px;
+                      background-color: #004768e2;
+                      border-radius: 50%;
+                    "
+                  ></div>
+                  <span>Python</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-star"></i> 41k
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-----------انتهای جدول ###############################-######------------->
-        <div class="d-flex justify-content-center align-items-center m-4 gap-1">
-          <img src="img/cat.png" class="cat" alt="logo" />
+          <!-----------انتهای جدول ###############################-######------------->
           <div
-            class="d-flex justify-content-center align-items-center text-nowrap gap-3"
+            class="d-flex justify-content-center align-items-center m-4 gap-1"
           >
-            <p class="mb-0">@2025 GitHub,inc.</p>
-            <p class="mb-0">Terms</p>
-            <p class="mb-0">Privacy</p>
-            <p class="mb-0">Security</p>
-            <p class="mb-0">Status</p>
-            <p class="mb-0">Docs</p>
-            <p class="mb-0">Contact</p>
-            <p class="mb-0">Mangecookies</p>
-            <p class="mb-0">Do not share personal information</p>
+            <img src="img/cat.png" class="cat" alt="logo" />
+            <div
+              class="d-flex justify-content-center align-items-center text-nowrap gap-3"
+            >
+              <p class="mb-0">@2025 GitHub,inc.</p>
+              <p class="mb-0">Terms</p>
+              <p class="mb-0">Privacy</p>
+              <p class="mb-0">Security</p>
+              <p class="mb-0">Status</p>
+              <p class="mb-0">Docs</p>
+              <p class="mb-0">Contact</p>
+              <p class="mb-0">Mangecookies</p>
+              <p class="mb-0">Do not share personal information</p>
+            </div>
+          </div>
+        </div>
+        </div>
+<div class="d-flex justify-content-center" style="width: -30%;">
+        <div class="border rounded ">
+          <div class="d-flex align-items-center px-2">
+            <h5>Latest changes</h5>
+          </div>
+            <div class="d-flex justify-content-center px-2">
+      
+      <!-- خط عمودی -->
+      <div style="width: 2px; background-color: black; margin-right: 16px;"></div>
+      
+      <!-- لیست تغییرات -->
+      <div class="d-flex flex-column justify-content-center gap-3">
+        <div>
+          <small class="text-muted">2 days ago</small><br />
+          <p class="fw-bold text-nowrap">GitHub Copilot in VS Code May release (v1.101)</p>
+        </div>
+        <div>
+          <small class="text-muted">2 days ago</small><br />
+          <p class="fw-bold">GitHub Copilot in VS Code May release (v1.101)</p>
+        </div>
+        <div>
+          <small class="text-muted">2 days ago</small><br />
+          <p class="fw-bold ">GitHub Copilot in VS Code May release (v1.101)</p>
+        </div>
+        <div>
+          <small class="text-muted">2 days ago</small><br />
+          <p class="fw-bold">GitHub Copilot in VS Code May release (v1.101)</p>
+        </div>
+        <div > <small class="text-muted">View changelog →</small></div>
+      </div>
+      
+    </div>
           </div>
         </div>
       </div>
-      <div class="border rounded">
-        <div class="d-flex justify-content-start px-2">
-          <h5>Latest changes</h5>
-        </div>
-        <div class="d-flex flex-column justify-content-center"></div>
+</div>
+
+      
       </div>
     </div>
 
