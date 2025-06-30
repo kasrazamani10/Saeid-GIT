@@ -14,18 +14,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <style>
-      .border-bottom {
-        border-bottom: 2px solid #ccc !important;
-      }
-    </style>
   </head>
   <body>
     <nav class="navbar navbar-light bg-light">
       <div
         class="container-fluid d-flex flex-wrap justify-content-center justify-content-md-between align-items-center"
       >
-        <div class="d-flex justify-content-center align-items-center gap-2">
+        <div
+          class="d-flex justify-content-center align-items-center flex-wrap gap-2"
+        >
           <!-- دکمه همبرگری -->
           <button
             type="button"
@@ -50,12 +47,12 @@
         </div>
 
         <div
-          class="d-flex justify-content-center align-items-center gap-2 py-1"
+          class="d-flex justify-content-center flex-wrap align-items-center gap-2 py-1"
         >
           <div class="position-relative">
             <input
               type="text"
-              class="form-control form-control-sm custom-input"
+              class="form-control form-control-sm input-icon-only"
               placeholder="type / to search"
               aria-label="جستجو"
               style="border-radius: 5px; padding-left: 25px"
@@ -157,11 +154,14 @@
         </div>
       </div>
     </nav>
+
     <!-----       #############CONTENT#################       -------->
     <div class="container-fluid">
-      <div class="row">
+      <div class="row flex-column flex-md-row align-items-md-start min-vh-100">
         <!-- ستون سمت چپ -->
-        <div class="col-md-3 border-end" style="min-height: 100vh">
+        <div
+          class="col-12 col-md-3 border-end border-0 border-md-end d-flex justify-content-center justify-content-md-start text-center text-md-start min-vh-100"
+        >
           <div class="d-flex flex-column gap-1 mt-2 px-3">
             <div class="d-flex align-items-center dropdown gap-3">
               <input type="checkbox" class="form-check-input" />
@@ -206,9 +206,7 @@
               </div>
               <div class="d-flex align-items-center gap-2">
                 <input type="checkbox" class="form-check-input" />
-                <p class="mb-0 text-truncate">
-                  Eagle-Tech-Solutions-Ltd/metis-tools
-                </p>
+                <p class="mb-0">Eagle-Tech-Solutions-Ltd/metis-tools</p>
               </div>
               <div class="d-flex align-items-center gap-2">
                 <input type="checkbox" class="form-check-input" />
@@ -231,214 +229,223 @@
         </div>
 
         <!-- محتوای اصلی وسط -->
-        <div class="col-md-9 px-5 mt-4">
+        <div class="col-12 col-md-9 px-3 px-md-5 mt-4">
           <div
-            class="row"
-            style="
-              border-bottom: 1px solid #e0e0e0;
-              width: 100%;
-              padding-bottom: 20px;
-            "
+            class="d-flex d-md-block justify-content-center text-center text-md-start"
           >
-            <div class="col-md-9">
-              <div class="d-flex flex-column">
-                <h4>Home</h4>
-                <div class="position-relative mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Ask Copilot"
-                  />
-                  <i
-                    class="bi bi-send position-absolute"
-                    style="right: 10px; top: 50%; transform: translateY(-50%)"
-                  ></i>
-                </div>
-
-                <div class="d-flex gap-2 mb-3">
-                  <button class="btn btn-light btn-sm">
-                    <i class="bi bi-arrow-left"></i>
-                    <i class="bi bi-arrow-right"></i> New
-                  </button>
-                  <button class="btn btn-light btn-sm">
-                    <i class="bi bi-record-circle"></i> Suggest next steps
-                  </button>
-                  <button class="btn btn-light btn-sm">
-                    <i class="bi bi-git"></i> Summarize pull request
-                  </button>
-                </div>
-
-                <div
-                  class="d-flex justify-content-between align-items-center my-3"
-                >
-                  <p class="fw-bold">Feed</p>
-                  <button class="btn btn-light btn-sm">
-                    <i class="bi bi-list"></i> Filter
-                  </button>
-                </div>
-
-                <!-- جدول فید -->
-                <div class="border rounded">
-                  <div
-                    class="d-flex justify-content-between align-items-center mb-2 p-1"
-                  >
-                    <div class="d-flex align-items-center gap-2">
-                      <i class="bi bi-bar-chart"></i>
-                      <span>Trending repository</span>
-                    </div>
-                    <span style="cursor: pointer">...</span>
+            <div
+              class="row"
+              style="
+                border-bottom: 1px solid #e0e0e0;
+                width: 100%;
+                padding-bottom: 20px;
+              "
+            >
+              <div class="col-md-9">
+                <div class="d-flex flex-column">
+                  <h4>Home</h4>
+                  <div class="position-relative mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Ask Copilot"
+                    />
+                    <i
+                      class="bi bi-send position-absolute"
+                      style="right: 10px; top: 50%; transform: translateY(-50%)"
+                    ></i>
                   </div>
 
-                  <!-- آیتم اول -->
-                  <div
-                    class="d-flex justify-content-between align-items-center mb-2 p-1"
-                  >
-                    <div class="d-flex align-items-center gap-2">
-                      <div
-                        style="
-                          width: 20px;
-                          height: 20px;
-                          background: #aaa;
-                          border-radius: 50%;
-                        "
-                      ></div>
-                      <span>guandeh17/Self-forcing</span>
-                    </div>
-                    <button
-                      class="btn btn-light btn-sm d-flex align-items-center gap-2"
-                    >
-                      <i class="bi bi-star-fill"></i> star
-                      <i class="bi bi-caret-down-fill"></i>
+                  <div class="d-flex gap-2 mb-3">
+                    <button class="btn btn-light btn-sm">
+                      <i class="bi bi-arrow-left"></i>
+                      <i class="bi bi-arrow-right"></i> New
+                    </button>
+                    <button class="btn btn-light btn-sm">
+                      <i class="bi bi-record-circle"></i> Suggest next steps
+                    </button>
+                    <button class="btn btn-light btn-sm">
+                      <i class="bi bi-git"></i> Summarize pull request
                     </button>
                   </div>
 
-                  <div class="d-flex gap-3 mb-3 p-1">
-                    <div class="d-flex align-items-center gap-1">
-                      <div
-                        style="
-                          width: 20px;
-                          height: 20px;
-                          background: #004768e2;
-                          border-radius: 50%;
-                        "
-                      ></div>
-                      <span>Python</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-1">
-                      <i class="bi bi-star"></i> 1.5k
-                    </div>
-                  </div>
-
-                  <hr />
-
-                  <!-- آیتم دوم -->
                   <div
-                    class="d-flex justify-content-between align-items-center mb-2 p-1"
+                    class="d-flex justify-content-between align-items-center my-3"
                   >
-                    <div class="d-flex align-items-center gap-2">
-                      <div
-                        style="
-                          width: 20px;
-                          height: 20px;
-                          background: #aaa;
-                          border-radius: 50%;
-                        "
-                      ></div>
-                      <span>Shubhamsaboo/awesome-llm-apps</span>
-                    </div>
-                    <button
-                      class="btn btn-light btn-sm d-flex align-items-center gap-2"
-                    >
-                      <i class="bi bi-star-fill"></i> star
-                      <i class="bi bi-caret-down-fill"></i>
+                    <p class="fw-bold">Feed</p>
+                    <button class="btn btn-light btn-sm">
+                      <i class="bi bi-list"></i> Filter
                     </button>
                   </div>
-                  <p class="p-1">
-                    Collection of awesome LLM apps with AI Agents and RAG using
-                    OpenAI, Anthropic, Gemini...
-                  </p>
 
-                  <div class="d-flex gap-3 p-1">
-                    <div class="d-flex align-items-center gap-2">
-                      <div
-                        style="
-                          width: 20px;
-                          height: 20px;
-                          background: #004768e2;
-                          border-radius: 50%;
-                        "
-                      ></div>
-                      <span>Python</span>
+                  <!-- جدول فید -->
+                  <div
+                    class="border rounded"
+                    style="width: 100%; overflow-x: hidden"
+                  >
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-2 p-1"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-bar-chart"></i>
+                        <span>Trending repository</span>
+                      </div>
+                      <span style="cursor: pointer">...</span>
                     </div>
-                    <div class="d-flex align-items-center gap-1">
-                      <i class="bi bi-star"></i> 41k
+
+                    <!-- آیتم اول -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-2 p-1 flex-wrap"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <div
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            background: #aaa;
+                            border-radius: 50%;
+                          "
+                        ></div>
+                        <span>guandeh17/Self-forcing</span>
+                      </div>
+                      <button
+                        class="btn btn-light btn-sm d-flex align-items-center gap-2"
+                      >
+                        <i class="bi bi-star-fill"></i> star
+                        <i class="bi bi-caret-down-fill"></i>
+                      </button>
+                    </div>
+
+                    <div class="d-flex gap-3 mb-3 p-1">
+                      <div class="d-flex align-items-center gap-1">
+                        <div
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            background: #004768e2;
+                            border-radius: 50%;
+                          "
+                        ></div>
+                        <span>Python</span>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                        <i class="bi bi-star"></i> 1.5k
+                      </div>
+                    </div>
+
+                    <hr />
+
+                    <!-- آیتم دوم -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-2 p-1 flex-wrap"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <div
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            background: #aaa;
+                            border-radius: 50%;
+                          "
+                        ></div>
+                        <span>Shubhamsaboo/awesome-llm-apps</span>
+                      </div>
+                      <button
+                        class="btn btn-light btn-sm d-flex align-items-center gap-2"
+                      >
+                        <i class="bi bi-star-fill"></i> star
+                        <i class="bi bi-caret-down-fill"></i>
+                      </button>
+                    </div>
+                    <p class="p-1">
+                      Collection of awesome LLM apps with AI Agents and RAG
+                      using OpenAI, Anthropic, Gemini...
+                    </p>
+
+                    <div class="d-flex gap-3 p-1">
+                      <div class="d-flex align-items-center gap-2">
+                        <div
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            background: #004768e2;
+                            border-radius: 50%;
+                          "
+                        ></div>
+                        <span>Python</span>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                        <i class="bi bi-star"></i> 41k
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- فوتر -->
+                  <div
+                    class="d-flex justify-content-center align-items-center mt-5 gap-2 flex-wrap text-center"
+                  >
+                    <img src="img/cat.png" class="cat" alt="logo" width="30" />
+                    <p class="mb-0 small">@2025 GitHub, inc.</p>
+                    <p class="mb-0 small">Terms</p>
+                    <p class="mb-0 small">Privacy</p>
+                    <p class="mb-0 small">Security</p>
+                    <p class="mb-0 small">Status</p>
+                    <p class="mb-0 small">Docs</p>
+                    <p class="mb-0 small">Contact</p>
+                    <p class="mb-0 small">Manage cookies</p>
+                    <p class="mb-0 small">Do not share personal info</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ستون سمت راست -->
+              <div class="col-md-3 d-none d-md-block">
+                <div class="border rounded p-2">
+                  <h5 class="mb-1">Latest changes</h5>
+                  <div class="d-flex gap-2">
+                    <!-- تغییرات -->
+                    <div style="width: 1px; background-color: #dcdcdc"></div>
+                    <div class="d-flex flex-column">
+                      <div class="py-1">
+                        <small class="text-muted">2 days ago</small><br />
+                        <span class="fw-bold small">
+                          GitHub Copilot in VS Code May release (v1.101)
+                        </span>
+                      </div>
+                      <div class="py-1">
+                        <small class="text-muted">2 days ago</small><br />
+                        <span class="fw-bold small">
+                          GitHub Copilot for JetBrains update
+                        </span>
+                      </div>
+                      <div class="py-1">
+                        <small class="text-muted">2 days ago</small><br />
+                        <span class="fw-bold small"
+                          >Security patch released</span
+                        >
+                      </div>
+                      <div class="py-1">
+                        <small class="text-muted">3 days ago</small><br />
+                        <span class="fw-bold small">
+                          CodeQL2.22.0 improves coverage for Go and adds support
+                          for Swift 6.1.2
+                        </span>
+                      </div>
+                      <div>
+                        <small class="text-muted">View changelog →</small>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- فوتر -->
+                <!-- خط عمودی زیر باکس -->
                 <div
-                  class="d-flex justify-content-center align-items-center mt-5 gap-2 flex-wrap text-center"
+                  class="d-flex justify-content-center"
+                  style="margin-top: 180px"
                 >
-                  <img src="img/cat.png" class="cat" alt="logo" width="30" />
-                  <p class="mb-0 small">@2025 GitHub, inc.</p>
-                  <p class="mb-0 small">Terms</p>
-                  <p class="mb-0 small">Privacy</p>
-                  <p class="mb-0 small">Security</p>
-                  <p class="mb-0 small">Status</p>
-                  <p class="mb-0 small">Docs</p>
-                  <p class="mb-0 small">Contact</p>
-                  <p class="mb-0 small">Manage cookies</p>
-                  <p class="mb-0 small">Do not share personal info</p>
+                  <div
+                    style="width: 100%; height: 1px; background-color: #e0e0e0"
+                  ></div>
                 </div>
-              </div>
-            </div>
-
-            <!-- ستون سمت راست -->
-            <div class="col-md-3 d-none d-md-block">
-              <div class="border rounded p-2">
-                <h5 class="mb-1">Latest changes</h5>
-                <div class="d-flex gap-2">
-                  <!-- تغییرات -->
-                  <div style="width: 1px; background-color: #dcdcdc"></div>
-                  <div class="d-flex flex-column">
-                    <div class="py-1">
-                      <small class="text-muted">2 days ago</small><br />
-                      <span class="fw-bold small">
-                        GitHub Copilot in VS Code May release (v1.101)
-                      </span>
-                    </div>
-                    <div class="py-1">
-                      <small class="text-muted">2 days ago</small><br />
-                      <span class="fw-bold small">
-                        GitHub Copilot for JetBrains update
-                      </span>
-                    </div>
-                    <div class="py-1">
-                      <small class="text-muted">2 days ago</small><br />
-                      <span class="fw-bold small">Security patch released</span>
-                    </div>
-                    <div class="py-1">
-                      <small class="text-muted">3 days ago</small><br />
-                      <span class="fw-bold small">
-                        CodeQL2.22.0 improves coverage for Go and adds support
-                        for Swift 6.1.2
-                      </span>
-                    </div>
-                    <div>
-                      <small class="text-muted">View changelog →</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- خط عمودی زیر باکس -->
-              <div
-                class="d-flex justify-content-center"
-                style="margin-top: 180px"
-              >
-                <div
-                  style="width: 100%; height: 1px; background-color: #e0e0e0"
-                ></div>
               </div>
             </div>
           </div>

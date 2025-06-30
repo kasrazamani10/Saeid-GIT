@@ -3,6 +3,7 @@
   padding: 0;
 }
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -25,14 +26,6 @@ img.cat {
   border-color: #ccc !important; /* حذف رنگ آبی */
   box-shadow: none !important; /* حذف shadow آبی */
   outline: none !important; /* حذف outline پیش‌فرض */
-}
-
-@media (max-width: 576px) {
-  .custom-input {
-    width: 50px !important;
-    font-size: 12px;
-    padding: 4px 8px 4px 25px;
-  }
 }
 
 input[type="checkbox"]:focus {
